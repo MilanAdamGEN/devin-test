@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Widget</title>
+  <link rel="stylesheet" href="widget.css">
+</head>
+<body>
+  <div class="stock-widget">
+    <div class="widget-header">
+      <button class="nav-button prev-button">←</button>
+      <div class="widget-title">Stocks</div>
+      <button class="nav-button next-button">→</button>
+      <button class="close-widget">✕</button>
+    </div>
+    
+    <div class="widget-content">
+      <div class="widget-subtitle">
+        <div class="watchlist-title">Watchlist</div>
+        <div class="live-indicator">Live</div>
+      </div>
+      
+      <div class="stocks-container">
+        <!-- Stock items will be dynamically inserted here -->
+      </div>
+      
+      <div class="add-stock-form">
+        <input type="text" class="add-stock-input" placeholder="Add symbol...">
+        <button class="add-stock-button">Add</button>
+      </div>
+    </div>
+    
+    <button class="toggle-widget">_</button>
+  </div>
+
+  <script src="widget.bundle.js"></script>
+</body>
+</html>

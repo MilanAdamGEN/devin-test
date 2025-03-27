@@ -1,0 +1,199 @@
+/* Widget Styles */
+.stock-widget {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.widget-header {
+  background-color: #e74c3c;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.widget-content {
+  padding: 20px;
+}
+
+.widget-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.watchlist-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.live-indicator {
+  color: #999;
+  font-size: 20px;
+}
+
+.stock-item {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-symbol {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stock-name {
+  font-size: 18px;
+  color: #999;
+}
+
+.stock-price-info {
+  text-align: right;
+}
+
+.stock-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stock-change {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.stock-change.positive {
+  color: #2ecc71;
+}
+
+.stock-change.negative {
+  color: #e74c3c;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid #2ecc71;
+  margin-right: 5px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 12px solid #e74c3c;
+  margin-right: 5px;
+}
+
+.add-stock-form {
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.add-stock-input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: none;
+  font-size: 18px;
+  color: #999;
+}
+
+.add-stock-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-stock-button:hover {
+  background-color: #c0392b;
+}
+
+/* Close button */
+.close-widget {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.close-widget:hover {
+  opacity: 1;
+}
+
+/* Minimize/maximize button */
+.toggle-widget {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.widget-minimized {
+  height: 40px;
+  overflow: hidden;
+}
