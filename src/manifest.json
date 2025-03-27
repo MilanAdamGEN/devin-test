@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Devin Test Extension",
+  "name": "Stock Widget Extension",
   "version": "1.0",
-  "description": "A simple Chrome extension for testing purposes",
+  "description": "A Chrome extension that displays a stock widget on every page",
   "background": {
     "service_worker": "background.bundle.js"
   },
@@ -20,5 +20,11 @@
       "128": "icons/icon128.png"
     }
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab", "storage", "tabs"],
+  "web_accessible_resources": [
+    {
+      "resources": ["widget.html", "widget.js", "widget.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
